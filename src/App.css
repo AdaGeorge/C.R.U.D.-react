@@ -1,0 +1,119 @@
+
+:root{
+  --main-color: antiquewhite;
+
+}
+
+body{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+/* -----Movile---- */
+
+.App{
+  background: #3A1C71;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.header{
+  height: 10em;
+  padding: 3em;
+  margin: 0 0 10px 0;
+  background-image: url(https://www.publicdomainpictures.net/pictures/270000/nahled/sunset-woman-silhouette-sunset.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--main-color);
+  font-size: 1.5em;
+}
+
+.btn-create-new{
+  padding: 8px;
+  border-radius: 15px;
+  border: none;  
+  font-size: 1.5em;
+  background-color: var(--main-color);
+}
+
+.card-form{
+  background-color: var(--main-color);
+  padding: 1.5em;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+
+.input-form{
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.user-icon{
+  font-size: 2em;
+}
+
+.card-user{
+  width: min(300px, 98%);
+  min-height: 150px;
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 1em;
+  margin: 10px;
+  border-radius: 56% 44% 100% 0% / 72% 44% 56% 28%  ;
+}
+
+.btn-card{
+  font-size: 1em;
+  background: none;
+  border: none;
+  margin: 10px;
+}
+
+footer{
+  height: 100px;
+  background-color: #3A1C71;
+  margin: 0;
+}
+
+.github-icon{
+  margin: 7px;
+  font-size: 5em;
+  color: #D76D77;
+}
+
+@media (min-width: 320px) {
+  .card-user{
+    width: 97%;
+  }
+}
+
+@media (min-width: 1020px) {
+  .form-container{
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .card-user{
+      position: relative;
+      width: 45%;
+      margin-right: auto;
+  }
+
+  .card-form{
+    position: absolute;
+    top: 50px;
+    width: 90%;
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+  }
+
+  .input-form{
+    width: 100%;
+  }
+
+}
+
