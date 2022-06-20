@@ -50,8 +50,22 @@ body{
   font-size: 15px;
 }
 
+.info{
+  display: grid;
+  gap: 30px;
+  background-color: var(--main-color);
+  padding: 1.5em;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+
 .user-icon{
   font-size: 2em;
+}
+
+.user-card-container{
+  width: 100%;
 }
 
 .card-user{
@@ -89,7 +103,7 @@ footer{
   }
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 1025px) {
   .form-container{
     position: relative;
     width: 50%;
@@ -107,6 +121,17 @@ footer{
     top: 50px;
     width: 90%;
     height: 50vh;
+    display: grid;
+    justify-content: center;
+  }
+
+  .info{
+    position: absolute;
+    top: 50px;
+    width: 50%;
+    left: 45%;
+    top: 36em;
+    margin: 2em;
     display: grid;
     justify-content: center;
   }

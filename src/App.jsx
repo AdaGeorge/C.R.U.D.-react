@@ -105,7 +105,7 @@ function App() {
 
        <button className='btn-create-new' onClick={showFormFunc}>{showForm ? 'Hide Form': 'Create new user'}</button>
 
-       <div className='form-container'>
+       
        {
         showForm &&
         <UserForm
@@ -117,13 +117,30 @@ function App() {
         register={register}
         />
        }
-       </div>
 
-       <div>
-
+       <div className='user-card-container'>
        {userList}
-
        </div>
+
+       <article className='info'>
+         <h2>Peticiones HTTP con axios y uso de C.R.U.D</h2>
+
+         <p>Axios es una API HTTP de cliente basada en XMLHttpRequest, que se puede utilizar en el navegador y en un servidor con Node.js. Axios funciona de forma asíncrona, permitiendo realizar con retorno JSON. Además es uno de los clientes más populares basado en promesas, que es simple, liviano y muy fácil de personalizar.</p>
+
+         <h3>En este proyecto veremos en acción los métodos CRUD</h3>
+
+         <p>El concepto CRUD está estrechamente vinculado a la gestión de datos digitales. CRUD hace referencia a un acrónimo en el que se reúnen las primeras letras de las cuatro operaciones fundamentales de aplicaciones persistentes en sistemas de bases de datos:</p>
+        
+         <ul>
+           <li>Create (Crear registros)</li>
+           <li>Read or Retrieve (Leer registros)</li>
+           <li>Update (Actualizar registros)</li>
+           <li>Delete or Destroy (Borrar registros)</li>
+         </ul>
+        
+         <p>En pocas palabras, CRUD resume las funciones requeridas por un usuario para crear y gestionar datos en una base de datos.</p>
+       </article>
+
       </main>
       <footer>
         <a href=""><FaGithub className='github-icon'/></a>

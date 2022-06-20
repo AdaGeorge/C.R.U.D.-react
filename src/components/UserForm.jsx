@@ -25,6 +25,7 @@ const UserForm = ({createNewUser, handleSubmit, reset, register, updateUser, obj
   }
 
   return (
+    <div className='form-container'>
     <form onSubmit={handleSubmit(submit)} className='card-form'>
         <div>
           <label htmlFor="first_name">First Name: </label>
@@ -49,6 +50,8 @@ const UserForm = ({createNewUser, handleSubmit, reset, register, updateUser, obj
 
        <button className='btn-create-new'><FiUpload/></button>
     </form>
+
+    </div>
   )
 }
 
