@@ -143,7 +143,7 @@ function App() {
 
       </main>
       <footer>
-        <a href=""><FaGithub className='github-icon'/></a>
+        <a href="https://github.com/AdaGeorge/C.R.U.D.-react"><FaGithub className='github-icon'/></a>
       </footer>
     </div>
   )
